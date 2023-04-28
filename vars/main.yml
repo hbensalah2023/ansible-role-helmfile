@@ -1,5 +1,5 @@
 ---
-helmfile_name: helm-{{helmfile_version}}-{{helmfile_platform}}
+helmfile_name: helmfile_{{helmfile_version}}_{{helmfile_platform}}
 
-helmfile_url: '{{ helmfile_mirror }}/{{ helmfile_name }}.tar.gz'
+helmfile_url: '{{ helmfile_mirror }}/v{{helmfile_version}}/{{ helmfile_name }}.tar.gz'
 helmfile_install_file: '{{ helmfile_bin_dir }}'
