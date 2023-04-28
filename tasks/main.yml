@@ -16,4 +16,5 @@
   ansible.builtin.unarchive:
     url: "{{ helmfile_url }}"
     dest: "{{ helmfile_install_file }}"
+    remote_src: yes
     mode: '0755'
